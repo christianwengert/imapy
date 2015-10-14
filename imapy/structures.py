@@ -21,3 +21,9 @@ class CaseInsensitiveDict(dict):
 
     def __getitem__(self, key):
         return super(CaseInsensitiveDict, self).__getitem__(key.lower())
+
+    def __getattr__(self, key):
+        return super(CaseInsensitiveDict, self).__getitem__(key.lower())
+
+    def __setattr__(self, key, value):
+        return super(CaseInsensitiveDict, self).__setitem__(key.lower(), value)

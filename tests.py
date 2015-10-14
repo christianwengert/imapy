@@ -12,7 +12,7 @@ from imapy import (imap, mail_folder, exceptions as e)
 from imapy.query_builder import Q
 from imapy.packages import (six)
 from imapy.email_message import EmailMessage
-from settings import (host, username, password, ssl)
+#from settings import (host, username, password, ssl)
 from email.mime.text import MIMEText
 from imapy import utils
 
